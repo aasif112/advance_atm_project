@@ -16,6 +16,7 @@ if (getPin.pin === savedPin) {
             choices: ["Current", "Saving", "Default"], }
     ]);
     if (selectType.selectType === userAcctType || selectType.selectType === "Default") {
+        console.log(`Your balance is: \t ${balance}`);
         start(balance);
     }
     else {
@@ -124,7 +125,7 @@ function buildArray(message, amount, transTime) {
 }
 async function otherTrans(amount, balance) {
     balance -= amount;
-    console.log(`Remainnig Balance: ${balance}`);
+    console.log(`Remainnig Balance: \t ${balance}`);
     let otherTrans = await inquirer.prompt([
         { message: "Do you want to make Anohter Transaction?",
             name: "otherTrans", type: "list", choices: ["Yes", "No"]

@@ -25,6 +25,7 @@ let selectType = await inquirer.prompt([
 ])  
 
 if(selectType.selectType === userAcctType || selectType.selectType === "Default") {
+console.log(`Your balance is: \t ${balance}`)
 start(balance)
 
 }
@@ -143,7 +144,7 @@ timeArray.push(transTime)
 
 async function otherTrans(/*message:string,*/ amount:number, balance:number) {
     balance -= amount
-    console.log(`Remainnig Balance: ${balance}` )
+    console.log(`Remainnig Balance: \t ${balance}` )
     
     let otherTrans = await inquirer.prompt([
         {   message:"Do you want to make Anohter Transaction?",  
