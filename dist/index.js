@@ -125,7 +125,7 @@ function buildArray(message, amount, transTime) {
 }
 async function otherTrans(amount, balance) {
     balance -= amount;
-    console.log(`Remainnig Balance: \t ${balance}`);
+    console.log(`Remainig Balance: \t ${balance}`);
     let otherTrans = await inquirer.prompt([
         { message: "Do you want to make Anohter Transaction?",
             name: "otherTrans", type: "list", choices: ["Yes", "No"]
@@ -152,7 +152,7 @@ async function end(balance) {
         for (let i = 0; i < amountArray.length; i++) {
             console.log(`${timeArray[i]}    \n \t${messageArray[i]}  \t${amountArray[i]}`);
         }
-        console.log(`Your Remainnig Balance is \t${balance}`);
+        console.log(`Your Remaining Balance is \t${balance}`);
         console.log(``);
         console.log(`-----------------Thank You for using this ATM-----------------`);
         console.log(``);
