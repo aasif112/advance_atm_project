@@ -1,8 +1,23 @@
 # Advance ATM Project
 <p>Tow ATM project made.</p>
-<p>One Simple ATM by following the class. File name in package dist/simple-atm.js</p>
+<p>One Simple ATM by following the class instructions. File name in package dist/simple-atm.js</p>
 <p>Other Advance ATM by adding more features: File name in package dist/index.js</p>
 <p>The Advance ATM can be run by:  npx @aasifali/atm_project</p>
+
+<p><b>Explaination: of Advance ATM</b></p>
+<ul>
+  <li>It asks a PIN code to start| The PIN code is 1122</li>
+  <li>If PIN code is correct then it Ask to select Account Type:</li>
+  <li>It gives Three options: Balance inquiry | Amount Withdraw | Amount Transfer</li>
+  <li>After each transaction the program shows: Amount withdraw/transfer | Remaining Balance</li>
+   <li>If selected transfer ammount</li>
+  <ul>
+      <li>It asks for an Account number| enter any 8-digit number that should not start with 0</li>
+      <li>Then it generates an OTP: and displays it(resembling ssms we get) | As OTP is entered the amount is transferred</li>
+  </ul>
+  <li>It asks to continue after each transaction. If selected No: It asks to print the receipt of all transanctions</li>
+  <li>If selected Yes it prints all transactions made and time of that transaction</li>
+</ul>
 <p>Thing to improve:</p>
 <ol>
   <li>Advance ATM ends:
