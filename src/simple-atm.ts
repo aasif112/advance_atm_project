@@ -1,4 +1,6 @@
+#!/usr/bin/env node
 
+// ---- SIMPLE ATM ----
 import inquirer from "inquirer";
 
 let  myPin = 1122

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 const savedPin = 1122;
 let opeBalance = 100000;
