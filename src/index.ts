@@ -152,7 +152,7 @@ async function otherTrans(/*message:string,*/ amount:number, balance:number) {
             name:"secondTrans",      type:"list",    choices:["Yes", "No"]
         }
     ])
-    if(secondTrans.otherTrans === "Yes") {
+    if(secondTrans.secondTrans === "Yes") {
         start(balance)
     } else {
         end(/*message, amount,*/ balance)
