@@ -127,12 +127,12 @@ function buildArray(message, amount, transTime) {
 async function otherTrans(amount, balance) {
     balance -= amount;
     console.log(`Remainig Balance: \t ${balance}`);
-    let otherTrans = await inquirer.prompt([
+    let secondTrans = await inquirer.prompt([
         { message: "Do you want to make Anohter Transaction?",
-            name: "otherTrans", type: "list", choices: ["Yes", "No"]
+            name: "secondTrans", type: "list", choices: ["Yes", "No"]
         }
     ]);
-    if (otherTrans.otherTrans === "Yes") {
+    if (secondTrans.otherTrans === "Yes") {
         start(balance);
     }
     else {
