@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
-const savedPin = 1122;
+const savedPin = 2222;
 let opeBalance = 100000;
 let balance = opeBalance;
 let userAcctType = "Current";
@@ -142,7 +142,7 @@ async function otherTrans(amount, balance) {
 }
 async function end(balance) {
     let askReceipt = await inquirer.prompt([
-        { message: "Do you get receipt?", name: "askReceipt",
+        { message: "Do you want to get a receipt?", name: "askReceipt",
             type: "list", choices: ["Yes", "No"]
         }
     ]);
